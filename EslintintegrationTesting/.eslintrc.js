@@ -8,6 +8,7 @@ module.exports = {
 		node: true,
 		es6: true
 	},
+	extends: 'eslint:recommended',
 	rules: {
 		camelcase: 2,
 		'comma-dangle': [2, 'never'],
