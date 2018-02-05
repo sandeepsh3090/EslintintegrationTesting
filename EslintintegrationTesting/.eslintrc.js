@@ -29,6 +29,7 @@ module.exports = {
 		'no-underscore-dangle': 0,
 		'no-void': 2,
 		quotes: [2, 'single'],
-		semi: [2, 'always']
+		semi: [2, 'always'],
+		'no-console': [2, { allow: ['warn', 'error'] }]
 	}
 };
