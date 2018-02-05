@@ -30,6 +30,6 @@ module.exports = {
 		'no-void': 2,
 		quotes: [2, 'single'],
 		semi: [2, 'always'],
-		'no-console': 1
+		'no-console': 0
 	}
 };
