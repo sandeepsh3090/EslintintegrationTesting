@@ -13,7 +13,6 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component {
-	console.log('sandeep sharma');
   console.warn('teswarning');
 	console.error('test error');
 	render() {
