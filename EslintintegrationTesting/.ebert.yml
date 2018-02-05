@@ -1,6 +1,10 @@
 # .ebert.yml
 engines:
+  fixme:
+    enabled: true
   eslint:
+    enabled: true
+  remark-lint:
     enabled: true
 
 pull_requests:
