@@ -14,6 +14,7 @@ const instructions = Platform.select({
 
 export default class App extends Component {
 	render() {
+		console.warn('test');
 		return (
 			<View style={styles.container}>
 				<Text style={styles.welcome}>Welcome to React Native!</Text>

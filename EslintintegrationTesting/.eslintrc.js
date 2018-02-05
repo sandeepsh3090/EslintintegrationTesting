@@ -2,6 +2,9 @@
 module.exports = {
 	parserOptions: {
 		ecmaVersion: 7,
+		ecmaFeatures: {
+			jsx: true
+		},
 		sourceType: 'module'
 	},
 	env: {
@@ -9,12 +12,11 @@ module.exports = {
 		es6: true,
 		browser: true
 	},
-	extends: 'eslint:recommended',
+	extends: ['eslint:recommended', 'plugin:react/recommended'],
 	rules: {
 		'comma-dangle': [2, 'never'],
 		'comma-style': [2, 'last'],
 		eqeqeq: 2,
-		indent: [2, 2, { VariableDeclarator: 2 }],
 		'no-eq-null': 2,
 		'no-extra-parens': 2,
 		'no-extra-semi': 2,
@@ -30,6 +32,7 @@ module.exports = {
 		'no-void': 2,
 		quotes: [2, 'single'],
 		semi: [2, 'always'],
-		'no-console': 2
+		'no-console': [1, { allow: ['warn', 'error'] }],
+		'no-unused-vars': [2, { vars: 'all' }]
 	}
 };
