@@ -1,16 +1,16 @@
 /*eslint-env es6*/
 module.exports = {
 	parserOptions: {
-		ecmaVersion: 6,
+		ecmaVersion: 7,
 		sourceType: 'module'
 	},
 	env: {
 		node: true,
-		es6: true
+		es6: true,
+		browser: true
 	},
 	extends: 'eslint:recommended',
 	rules: {
-		camelcase: 2,
 		'comma-dangle': [2, 'never'],
 		'comma-style': [2, 'last'],
 		eqeqeq: 2,
@@ -30,6 +30,6 @@ module.exports = {
 		'no-void': 2,
 		quotes: [2, 'single'],
 		semi: [2, 'always'],
-		'no-console': 0
+		'no-console': 2
 	}
 };
